@@ -26,5 +26,5 @@ grumphp:
                 # Tâches à exécuter avant un push
                 - phplint
                 - phpcs
-                # - phpstan
+                - phpstan
 

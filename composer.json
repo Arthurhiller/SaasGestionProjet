@@ -15,7 +15,10 @@
         "symfony/yaml": "6.2.*"
     },
     "require-dev": {
-        "phpro/grumphp": "^1.16"
+        "overtrue/phplint": "^9.0",
+        "phpro/grumphp": "^1.16",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "*"
     },
     "config": {
         "allow-plugins": {

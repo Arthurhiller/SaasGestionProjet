@@ -25,6 +25,6 @@ grumphp:
             git_pre_push:
                 # Tâches à exécuter avant un push
                 - phplint
-                # - phpcs
+                - phpcs
                 # - phpstan
 

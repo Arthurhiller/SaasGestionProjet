@@ -1,0 +1,30 @@
+grumphp:
+    tasks:
+        parameters:
+            # Paramètres généraux de GrumPHP
+            bin_dir: bin
+            git_dir: .git
+            hooks_dir: .grumphp
+            hooks_preset: local
+
+        # Configuration des tâches avant le commit
+        tasks:
+            git_commit_message:
+                subject:
+                    # Règles pour la première ligne du message de commit
+                    - match: '/^(ADD|UPDATE|FIX): .+$/'
+                      message: "La première ligne du message de commit doit commencer par ADD:, UPDATE: ou FIXE:"
+
+                # Règles pour la longueur du message de commit
+                - max_subject_width: 100
+                  message: "La première ligne du message de commit doit être inférieure à 100 caractères"
+
+                # Ignorer les merges automatiques générés par Git
+                ignore_merge_commits: true
+
+            git_pre_push:
+                # Tâches à exécuter avant un push
+                # - phplint
+                # - phpcs
+                # - phpstan
+

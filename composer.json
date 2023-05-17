@@ -12,13 +12,15 @@
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.2.*",
         "symfony/runtime": "6.2.*",
+        "symfony/security-bundle": "6.2.*",
         "symfony/yaml": "6.2.*"
     },
     "require-dev": {
         "overtrue/phplint": "^9.0",
         "phpro/grumphp": "^1.16",
         "phpstan/phpstan": "^1.10",
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "*",
+        "symfony/maker-bundle": "^1.48"
     },
     "config": {
         "allow-plugins": {

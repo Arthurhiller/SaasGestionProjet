@@ -30,8 +30,11 @@
         "overtrue/phplint": "^9.0",
         "phpro/grumphp": "^1.16",
         "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.1",
         "squizlabs/php_codesniffer": "*",
-        "symfony/maker-bundle": "^1.48"
+        "symfony/maker-bundle": "^1.48",
+        "symfony/stopwatch": "6.2.*",
+        "symfony/web-profiler-bundle": "6.2.*"
     },
     "config": {
         "allow-plugins": {

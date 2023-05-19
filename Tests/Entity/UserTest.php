@@ -46,7 +46,11 @@ class UserTest extends TestCase
         $this->assertMatchesRegularExpression($regex, $user->getPassword());
     }
 
-    
+    /**
+     * Function to test the role assignment to a user
+     *
+     * @return void
+     */
     public function testUserRoleAttribution()
     {
         // create a new user

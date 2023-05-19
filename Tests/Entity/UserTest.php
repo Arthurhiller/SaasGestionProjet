@@ -45,4 +45,20 @@ class UserTest extends TestCase
         $regex = "/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$/";
         $this->assertMatchesRegularExpression($regex, $user->getPassword());
     }
+
+    
+    public function testUserRoleAttribution()
+    {
+        // create a new user
+        $user = new User();
+        $user->setEmail('test@exemple.com');
+        $user->setPassword('Password@123');
+        $user->setRoles(['ROLE_USER']);
+
+        $this->assertEquals('test@exemple.com', $user->getEmail());
+        $this->assertEquals('Password@123', $user->getPassword());
+
+        $this->assertNotEmpty($user->getRoles());
+        $this->assertTrue(in_array('ROLE_USER', $user->getRoles()));
+    }
 }
